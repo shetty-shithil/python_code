@@ -1,0 +1,18 @@
+import tkinter as tk
+
+window =tk.Tk()
+window.title('Sign In')
+label1=tk.Label(window,text='User Name')
+label1.grid(row=0,column=0)
+label2=tk.Label(window,text='Password')
+label2.grid(row=1,column=0)
+e1=tk.Entry(window)
+e1.grid(row=0, column=1)
+e2=tk.Entry(window)
+e2.grid(row=1, column=1)
+e2=tk.Entry(window)
+cb=tk.Checkbutton(window,text='Keep me logged in:')
+cb.grid(row=2, columnspan=2)
+b1=tk.Button(window,text='Submit',command='Clicked')
+b1.grid(row=3,columnspan=2)
+window.mainloop()
